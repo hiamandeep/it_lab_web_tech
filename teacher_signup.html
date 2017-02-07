@@ -4,11 +4,21 @@
 		<title>Web Technology Lab</title>
 		<link rel="stylesheet" href="static/css/style.css">
 	</head>
-	
+<header>
+<nav>
+	<ul>
+	  <li><a class="" href="welcome.html"><img src="static/img/logo.png" height="25px" width="25px" /></a></li>
+	  <li><a href="index.html">Student Login</a></li>
+	  <li><a href="teacher_login.html">Teacher Login</a></li>
+	  <li><a href="signup.html">Student Registration</a></li>
+	  <li><a href="teacher_signup.html">Teacher Registration</a></li>
+	</ul>
+</nav>
+</header>
 	<body>
 		<div class="signup_box">
 		<h1>Teacher Registration Page</h1>
-			<form action="" name="myform2" onsubmit="return(validate_signup_form())">
+			<form action="welcome.html" name="myform2" onsubmit="return(validate_signup_teacher_form())">
 				<label for="">Name: </label> 
 				<p><input type="text" placeholder="Enter username" name="name" ></p>
 				<label for="">Gender</label>
@@ -44,7 +54,7 @@
 				    <option value="eighthsem">EighthSemester</option>
 				  </select>
 
- 				<button type="submit" class="signupbtn">Signup</button>
+ 				<button type="submit" class="signupbtn button">Signup</button>
 			</form>
 		</div>
 	

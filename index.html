@@ -3,17 +3,28 @@
 		<title>Web Technology Lab</title>
 		<link rel="stylesheet" href="static/css/style.css">
 	</head>
+<header>
+<nav>
+	<ul>
+	  <li><a class="" href="welcome.html"><img src="static/img/logo.png" height="25px" width="25px" /></a></li>
+	  <li><a href="index.html">Student Login</a></li>
+	  <li><a href="teacher_login.html">Teacher Login</a></li>
+	  <li><a href="signup.html">Student Registration</a></li>
+	  <li><a href="teacher_signup.html">Teacher Registration</a></li>
+	</ul>
+</nav>
+</header>
 	<body>
 		<div class="login_box">
 		<h1>Login Page</h1>
 
-			<form action="" method="GET" name="myform" onsubmit="return(validate_login_form());">
+			<form action="welcome.html" method="GET" name="myform" onsubmit="return(validate_login_form());">
 				<label for="">Username: </label>
 				<p><input type="text" placeholder="Enter username" name="username"></p>
 				<label></label>
 				<label for="">Password: </label>
 				<p><input type="password" placeholder="Enter Password" name="password"></p>
-				<input type="submit">
+				<input type="submit" class="button1">
 			</form>
 		</div>
 
