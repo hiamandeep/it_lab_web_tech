@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Web Technology Lab</title>
+		<title>LOGIN PAGE</title>
 		<link rel="stylesheet" href="static/css/style.css">
 	</head>
 <header>
@@ -15,19 +15,23 @@
 </nav>
 </header>
 	<body>
-		<div class="login_box">
+		<section class="login_box">
 		<h1>Login Page</h1>
-
 			<form action="welcome.html" method="GET" name="myform" onsubmit="return(validate_login_form());">
-				<label for="">Username: </label>
-				<p><input type="text" placeholder="Enter username" name="username"></p>
-				<label></label>
-				<label for="">Password: </label>
-				<p><input type="password" placeholder="Enter Password" name="password"></p>
-				<input type="submit" class="button1">
+				<div class="input">
+					 <label>
+				     <input type="text" placeholder="Enter username" name="username">
+				     </label>
+				</div>
+				<div class="input">
+					 <label User Name :><input type="password" placeholder="Enter Password" name="password"></label>
+				</div>
+				<div class="input">
+				    <input type="submit" class="button1">
+				 </div>
 			</form>
+			<h6><a href="#">Forgot Password</a></h6>
 		</div>
-
 		<script src= static/js/script.js></script>
 	</body>
 </html>

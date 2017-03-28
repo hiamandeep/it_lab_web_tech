@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Technology Lab</title>
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+<header>
+<nav>
+	<ul>
+	  <li><a class="" href="welcome.html"><img src="static/img/logo.png" height="25px" width="25px" /></a></li>
+	  <li><a href="index.html">Student Login</a></li>
+	  <li><a href="teacher_login.html">Teacher Login</a></li>
+	  <li><a href="signup.html">Student Registration</a></li>
+	  <li><a href="teacher_signup.html">Teacher Registration</a></li>
+	</ul>
+</nav>
+</header>
+	<body>
+		<div class="signupbox">
+		<h1>Teacher Registration Page</h1>
+			<form action="welcome.html" name="myform2" onsubmit="return(validate_signup_teacher_form())">
+				<fieldset><h2> Personal Information </h2>
+				<div id="personal-details">
+				<table>
+						<tr>
+							<th> First Name </th>
+							<td> <input type="text" name="first_name" placeholder="First Name"> </td>
+						</tr>
+						<tr>
+							<th> Last Name </th>
+							<td> <input type="text" name="last_name" placeholder="Last Name"> </td>
+						</tr>
+						<tr>
+							<th> Date of Birth </th>
+							<td> <input type="text" name="first_name" placeholder="date/month/year"> </td>
+						</tr>
+						<tr>
+							<th> Address </th>
+							<td> <textarea name="address" rows="4" cols="30" placeholder="Enter your address"> </textarea> </td>
+						</tr>
+						<tr>
+						<th>Mobile No. </th>
+						<td><input type="number" placeholder="Enter mobile no" name="mobile" ></td>
+						</tr>
+						<tr>
+						<th>Gender</th>
+						<td><input type="radio" name="gender">Male</input>
+						<input type="radio" name="gender">Female</input></td>
+						</tr>
+						<tr>
+						<th>Image<th>
+						<input type="file" name="filesToUpload[]" id="filesToUpload" multiple="multiple" >
+      					<output id="filesInfo"></output>
+      					</tr>
+						</table>
+						</div>
+						</fieldset>
+						<fieldset><h4>LOGIN CREDENTIALS</h4>
+				<label for="">Email:</label>
+				<p><input type="password" placeholder="Enter mailid id="password" name="password" ></p>
+				<label for="">Password: </label>
+                <p><input type="password" placeholder="Password" id="password" name="password" ></p>
+                <label for="">Confirm password: </label>
+                <p><input type="password" placeholder="Confirm Password" name="confirm_password" ></p>
+                </fieldset>
+ 				<button type="submit" class="signupbtn button">Signup</button>
+			</form>
+		</div>
+	
+	<script src= static/js/script.js></script>
+	</body>
+</html>
